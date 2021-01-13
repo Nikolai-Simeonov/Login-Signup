@@ -5,7 +5,9 @@ $(".container-form .btn").click(function(){
   $(".container").addClass("active");
 });
 
-  
-  $(".theme-switch").on("click", () => {
-    $("body").toggleClass("light-theme");
-  });
+
+$(function() {
+	AOS.init({
+		duration: 600,
+	});
+});
